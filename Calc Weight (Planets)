@@ -1,0 +1,40 @@
+#include <iostream>
+
+int main() {
+  
+  int weight, planet;
+  double adjweight;
+  
+  std::cout << "Please enter your weight: ";
+  std::cin >> weight;
+  
+  std::cout << "1 - Venus\n";
+  std::cout << "2 - Mars\n";
+  std::cout << "3 - Jupiter\n";
+  std::cout << "4 - Saturn\n";
+  std::cout << "Please enter the number for your planet: ";
+  std::cin >> planet;
+  
+  switch(planet) {
+      
+    case 1 :
+      adjweight = weight*0.78;
+      std::cout << "Your weight will be :" << adjweight << "\n":
+      break;
+    case 2 :
+      adjweight = weight*0.39;
+      std::cout << "Your weight will be :" << adjweight << "\n":
+      break;
+    case 3 :
+      adjweight = weight*2.65;
+      std::cout << "Your weight will be :" << adjweight << "\n":
+      break;
+    case 4 :
+      adjweight = weight*1.17;
+      std::cout << "Your weight will be :" << adjweight << "\n":
+      break;
+    default :
+      std::cout << "Sorry, I don't know that one.\n";
+      break;
+  }
+}
