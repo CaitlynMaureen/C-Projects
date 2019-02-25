@@ -1,0 +1,77 @@
+#include <iostream>
+#include <stdlib.h>
+
+int main() {
+  
+  //Program opening statement
+  std::cout << "MAGIC 8-BALL: ";
+  
+  //Randomizer between 1-19 each run
+  srand(time(NULL));
+  int answer = rand() % 20;
+  
+  //Answer Response
+	switch (answer) {
+  
+  case 0 : 
+  	std::cout << "It is certain";
+  	break;
+  case 1 :
+  	std::cout << "Who knows?";
+     break;
+  case 2 :
+  	std::cout << "There is no way";
+  	break;
+  case 3 :
+  	std::cout << "Heck yeah!";
+  	break;
+  case 4 :
+  	std::cout << "I think that might work out!";
+  	break;
+  case 5 :
+  	std::cout << "Um. No.";
+  	break;
+  case 6 :
+  	std::cout << "What do you think?";
+  	break;
+  case 7 :
+  	std::cout << "It seems possible";
+  	break;
+  case 8 :
+  	std::cout << "I think that might not work";
+  	break;
+  case 9 :
+  	std::cout << "Can you say - yes?!";
+  	break;
+  case 10 :
+  	std::cout << "maybe";
+  	break;
+  case 11 :
+  	std::cout << "maybe not";
+  	break;
+  case 12 :
+  	std::cout << "How exciting!";
+  	break;
+  case 13 :
+  	std::cout << "Think about it more";
+  	break;
+  case 14 :
+  	std::cout << "I have no idea";
+  	break;
+  case 15 :
+  	std::cout << "Kinda";
+  	break;
+  case 16 :
+  	std::cout << "Ummmm";
+  	break;
+  case 17 :
+  	std::cout << "Well...";
+  	break;
+  case 18 :
+  	std::cout << "More than likely";
+  	break;
+  case 19 :
+  	std::cout << "Very doubtful";
+  	break;
+	}
+}
